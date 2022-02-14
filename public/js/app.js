@@ -34,9 +34,10 @@ massageTwo.textContent = ''
 weatherform.addEventListener('submit',(e)=>{
     e.preventDefault() //this is prevent from refresh.
     const location = search.value
-    
-    
-fetch('http://localhost:8000/weather?search='+location).then((response)=>{
+
+
+//http://localhost:8000
+fetch('/weather?search='+location).then((response)=>{
     response.json().then((data)=>{
         if(data.error) {
             //console.log(data.error)
