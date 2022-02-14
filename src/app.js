@@ -7,7 +7,7 @@ const hbs  = require('hbs')
 
 
 const forecast= require('./utils/forecast') 
-
+const port = process.env.PORT || 8000
 
 //app.com/
 //app.com/help
@@ -143,6 +143,6 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log('Server is starting....')
 })
