@@ -35,7 +35,7 @@ weatherform.addEventListener('submit',(e)=>{
     e.preventDefault() //this is prevent from refresh.
     const location = search.value
 
-
+//this is used for local server but to host it online we just pass href.
 //http://localhost:8000
 fetch('/weather?search='+location).then((response)=>{
     response.json().then((data)=>{
