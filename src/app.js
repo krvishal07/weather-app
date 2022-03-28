@@ -85,13 +85,13 @@ app.get('/weather',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         title: 'about',
-        name : 'Vishal'
+        name :  '' 
     })
 })
 app.get('/help',(req,res)=>{
     res.render('help',{
         title : 'help',
-        name : 'Vishal'
+        name : ''
     })
 })
 
