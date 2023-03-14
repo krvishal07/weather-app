@@ -48,7 +48,7 @@ app.get('',(req,res)=>{
     // }) 
     res.render('index',{
         title: 'Weather',
-        name:'Vishal'
+        name:'Vishal-Kumar'
     })
 })
 
